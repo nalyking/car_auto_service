@@ -22,11 +22,50 @@
   </header>
   <main>
     <section>
-      <div class="home-content">
-        <h2>Pagina inicial</h2>
+      <div class="container">
+        <div class="item item1">
+          <h2>Pagina inicial</h2>
+        </div>
+        <div class="item item2">
+          <div class="block1">1</div>
+          <div class="block2">2</div>
+          <div class="block3">3</div>
+        </div>
+        <div class="item item3">
+          <div class="image">
+            <img class="image-emira" src="https://www.topgear.com/sites/default/files/2023/08/TopGear%20-%20Lotus%20Emira%20-%20First%20Drive-003_1.jpg" alt="Imagem 1">
+            <p class="lotus_emira">Lotus Emira</p>
+          </div>
+          
+        </div>
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <div class="footer-content">
+      <p>Silva Alves Auto-Serviços | Website feito por <a class="dev-link" href="https://github.com/nalyking" target="_blank">Ylan Cristian</a></p>
+    </div>
+  </footer>
 </body>
+<script>
+  const lotus_emira = document.querySelector('.lotus_emira');
+  lotus_emira.addEventListener('mouseenter', () => {
+    lotus_emira.style.backgroundColor = '#fab218b2';
+    lotus_emira.style.color = 'white';
+  });
+  lotus_emira.addEventListener('mouseleave', () => {
+    lotus_emira.style.backgroundColor = 'rgba(255, 255, 255, 0.698)';
+    lotus_emira.style.color = 'black';
+  });
+  
+  const image_emira = document.querySelector('.image-emira', '.lotus_emira');
+  image_emira.addEventListener('mouseenter', () => {
+    lotus_emira.style.backgroundColor = '#fab218b2';
+    lotus_emira.style.color = 'white';
+  });
+  image_emira.addEventListener('mouseleave', () => {
+    lotus_emira.style.backgroundColor = 'rgba(255, 255, 255, 0.698)';
+    lotus_emira.style.color = 'black';
+  });
+</script>
 </html>
